@@ -142,14 +142,14 @@ def run_dirichlet_sweep(alphas=None, num_rounds=50, runs_per_alpha=2):
             })
     return pd.DataFrame(results)
 
-def run_signal_budget_study(num_rounds=50):
+def run_signal_budget_study(num_rounds=50,seed=256):
     budgets = ["full", "no_validation", "directional"]
     results = []
     for b in budgets:
         print(f"\nSignal budget: {b}")
         cfg = get_default_config(); cfg["signal_budget"] = b
         m, _, _ = run_enhanced_federated_learning(
-            config=cfg, num_rounds=num_rounds, attack_type="backdoor", seed=256
+            config=cfg, num_rounds=num_rounds, attack_type="backdoor", seed=seed
         )
         results.append({
             "signal_budget": b,
@@ -159,3 +159,4 @@ def run_signal_budget_study(num_rounds=50):
             "final_ece": m["ece"][-1],
         })
     return pd.DataFrame(results)
+

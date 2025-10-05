@@ -30,6 +30,7 @@ def main():
     # Signal budget
     s = sub.add_parser("signal", help="Run signal-budget study")
     s.add_argument("--rounds", type=int, default=50)
+    s.add_argument("--seed",type=int,default=42)
     s.add_argument("--out", type=str, default="signal_budget_metrics.pkl")
 
     args = p.parse_args()
@@ -53,7 +54,7 @@ def main():
         print(f"Saved dirichlet sweep results to {args.out}")
 
     elif args.cmd == "signal":
-        df = run_signal_budget_study(num_rounds=args.rounds)
+        df = run_signal_budget_study(num_rounds=args.rounds,seed=args.seed)
         plot_signal_budget(df)
         with open(args.out, "wb") as f:
             pickle.dump(df, f)
@@ -61,3 +62,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

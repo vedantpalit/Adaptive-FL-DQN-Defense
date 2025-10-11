@@ -27,8 +27,8 @@ Our framework introduces:
 - torchvision, numpy, pandas, matplotlib, seaborn, tqdm, scipy
 
 ```bash
-git clone https://github.com/vedantpalit/TrustAwareFL-RL.git
-cd TrustAwareFL-RL
+git clone https://github.com/vedantpalit/Adaptive-FL-DQN-Defense.git
+cd  Adaptive-FL-DQN-Defense
 pip install -r flrl/requirements.txt
 ```
 

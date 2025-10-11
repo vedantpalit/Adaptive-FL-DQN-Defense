@@ -2,7 +2,7 @@
 
 Official implementation accompanying our paper [**"Adaptive Federated Learning Defences via Trust-Aware Deep Q-Networks"**](https://arxiv.org/abs/2510.01261) (Under Review at ICLR 2026)  
 
-This repository provides a modular and reproducible framework for studying *robust federated learning defenses* under *partial observability*, implemented with a **POMDP-based server** and multiple **reinforcement learning (RL) controllers** — including DQN, Policy Gradient, Linear Q-learning, and Random baselines.
+This repository provides a modular and reproducible framework for studying *robust federated learning defenses* under *partial observability*, implemented with a **POMDP-based server** and multiple **reinforcement learning (RL) controllers** such as including DQN, Policy Gradient, Linear Q-learning, and Random baselines.
 
 ---
 

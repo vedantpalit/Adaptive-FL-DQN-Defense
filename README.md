@@ -58,7 +58,7 @@ python -m flrl.main signal --rounds 50 --seed 42 #64 128 200 256
 Run all RL agents (DQN, Random, LinearQ, PolicyGradient) and save per-agent results.
 
 ```bash
-python run_all_agents.py --rounds 50 --runs 3 --alpha 0.5 --out agent_results
+python run_all_agents.py --rounds 50 --runs 5 --alpha 0.5 --out agent_results
 ```
 
 ---

@@ -1,4 +1,4 @@
-# Adaptive Federated Learning Defences via Trust-Aware Deep Q-Networks
+# Adaptive Trust Aware Defence in Federated Learning: A Deep-Q Network Approach to Detect Weight Poisoning Attacks
 
 Official implementation for my thesis project
 

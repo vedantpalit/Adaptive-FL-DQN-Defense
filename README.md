@@ -83,20 +83,7 @@ Each run logs:
 
 ---
 
-## Citation
 
-If you find this work useful, please cite:
-
-```bibtex
-@misc{palit2025adaptivefederatedlearningdefences,
-      title={Adaptive Federated Learning Defences via Trust-Aware Deep Q-Networks}, 
-      author={Vedant Palit},
-      year={2025},
-      eprint={2510.01261},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2510.01261}, 
-}
 ```
 
 

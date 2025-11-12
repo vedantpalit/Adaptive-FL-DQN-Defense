@@ -81,9 +81,6 @@ Each run logs:
 - Default setting: 10 clients, 20% malicious, Dirichlet α=0.5, Rounds=50 .
 - GPU optional; single-GPU (T4) recommended for full benchmark.
 
----
-
-
 ```
 
 
